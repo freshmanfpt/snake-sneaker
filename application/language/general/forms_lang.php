@@ -55,7 +55,7 @@
 	$lang['password_cpass_match_lbl'] = "Mật khẩu phải trùng nhau!";
 	$lang['password_c_new_pass_match_lbl'] = "Mật khẩu phải trùng nhau!";
 	
-	$lang['message_lbl'] = "Message";
+	$lang['message_lbl'] = "Tin nhắn";
 	$lang['subject_lbl'] = "Select Subject";
 	$lang['subject_title_lbl'] = "Subject";
 
@@ -104,30 +104,30 @@
 	$lang['card_exp_mon_lbl'] = "Expiry Month";
 	$lang['card_exp_yr_lbl'] = " Expiry Year";	
 
-	$lang['bank_name_lbl'] = "Bank Name";
+	$lang['bank_name_lbl'] = "Tên ngân hàng";
 	$lang['bank_name_place_lbl'] = "Enter bank name";
 
-	$lang['bank_acc_no_lbl'] = "Bank Account No";
+	$lang['bank_acc_no_lbl'] = "Tài khoản ngân hàng";
 	$lang['bank_acc_no_place_lbl'] = "Enter bank account no.";
 
-	$lang['bank_type_lbl'] = "Account Type";
+	$lang['bank_type_lbl'] = "Loại tài khoản";
 	$lang['saving_type_lbl'] = "Saving";
 	$lang['current_type_lbl'] = "Current";
 
-	$lang['bank_ifsc_lbl'] = "IFSC";
+	$lang['bank_ifsc_lbl'] = "SWIFT";
 	$lang['bank_ifsc_place_lbl'] = "Enter bank ifsc";
 
-	$lang['holder_name_lbl'] = "Bank Holder Name";
+	$lang['holder_name_lbl'] = "Tên tài khoản";
 	$lang['holder_name_place_lbl'] = "Enter bank holder name";
 
 	$lang['holder_name_note_lbl'] = "Name must match the Name linked to this Bank Account";
 
-	$lang['holder_mobile_lbl'] = "Bank Holder Mobile No.";
+	$lang['holder_mobile_lbl'] = "Số điện thoại.";
 	$lang['holder_mobile_place_lbl'] = "Enter bank holder mobile number";
 
 	$lang['holder_mobile_note_lbl'] = "Mobile Number must match the Mobile Number linked to this Bank Account";
 
-	$lang['holder_email_lbl'] = "Bank Holder Email";
+	$lang['holder_email_lbl'] = "Email";
 	$lang['holder_email_place_lbl'] = "Enter bank holder email";
 
 	$lang['holder_email_note_lbl'] = "Email must match the Email linked to this Bank Account";
