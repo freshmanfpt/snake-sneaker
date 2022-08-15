@@ -125,15 +125,15 @@
         </a> 
       </li>
 
-      <li class="dropdown-li settings <?php if(isset($current_page) && $current_page=="settings"){ echo 'active'; }?>">
+      <!-- <li class="dropdown-li settings <?php if(isset($current_page) && $current_page=="settings"){ echo 'active'; }?>">
         <a href="javascript:void(0)" class="dropdown-a">
           <div class="icon"> <i class="fa fa-cog" aria-hidden="true"></i> </div>
           <div class="title"><?=$this->lang->line('settings_lbl')?></div>
           <i class="fa fa-angle-right pull-right" style="padding-top: 8px;color: #fff;"></i>
         </a> 
-      </li>
+      </li> -->
 
-      <li class="cust-dropdown-container">
+      <!-- <li class="cust-dropdown-container">
         <ul class="cust-dropdown"> 
           <li>
             <a href="<?=site_url('admin/web-settings')?>" class="<?php if($page_title==$this->lang->line('web_settings_lbl')){ echo 'active';} ?>">
@@ -146,9 +146,14 @@
             </a> 
           </li>   
         </ul>
-      </li>
-
-      <?php 
+      </li> -->
+      <!-- Todo -->
+      <li>
+            <a href="<?=site_url('admin/notification')?>" class="<?php if($page_title==$this->lang->line('notification_lbl')){ echo 'active';} ?>">
+              <div class="title"><i class="fa fa-angle-right" aria-hidden="true"></i> <?=$this->lang->line('notification_lbl')?></div>
+            </a> 
+      </li>  
+      <!-- <?php 
         if($this->db->get_where('tbl_verify', array('id' => '1'))->row()->android_envato_purchased_status==1)
         {
       ?>
@@ -174,16 +179,16 @@
         </ul>
       </li>
 
-      <?php } ?>
+      <?php } ?> -->
 
-      <li class="<?php if($page_title==$this->lang->line('verify_purchase_lbl')){ echo 'active';} ?>">
+      <!-- <li class="<?php if($page_title==$this->lang->line('verify_purchase_lbl')){ echo 'active';} ?>">
         <a href="<?=site_url('admin/verify-purchase')?>">
         <div class="icon"> <i class="fa fa-check-square-o" aria-hidden="true"></i> </div>
         <div class="title"><?=$this->lang->line('verify_purchase_lbl')?></div>
         </a> 
-      </li>
+      </li> -->
 
-      <?php 
+      <!-- <?php 
         if($this->db->get_where('tbl_verify', array('id' => '1'))->row()->android_envato_purchased_status==1)
         {
       ?>
@@ -193,7 +198,7 @@
         <div class="title"><?=$this->lang->line('api_urls_lbl')?></div>
         </a> 
       </li>
-      <?php } ?>
+      <?php } ?> -->
       
       
     </ul>
