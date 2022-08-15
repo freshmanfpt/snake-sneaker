@@ -390,7 +390,7 @@ $redirect=$_GET['redirect'].(isset($_GET['category']) ? '&category='.$_GET['cate
 
               <!-- for seo of product -->
 
-              <div class="section_container" style="padding: 10px;border:1px solid #d7d7d7;">
+              <!-- <div class="section_container" style="padding: 10px;border:1px solid #d7d7d7;">
                 <h4><?=$this->lang->line('seo_content_lbl')?></h4>
                 <hr/>
                 <div class="row">
@@ -421,7 +421,7 @@ $redirect=$_GET['redirect'].(isset($_GET['category']) ? '&category='.$_GET['cate
 
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- end seo -->
 
