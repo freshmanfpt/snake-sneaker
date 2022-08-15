@@ -150,7 +150,7 @@
       <!-- Todo -->
       <li>
             <a href="<?=site_url('admin/notification')?>" class="<?php if($page_title==$this->lang->line('notification_lbl')){ echo 'active';} ?>">
-              <div class="title"><i class="fa fa-angle-right" aria-hidden="true"></i> <?=$this->lang->line('notification_lbl')?></div>
+              <div class="title"><i class="fa fa-bell-o" aria-hidden="true"></i> <?=$this->lang->line('notification_lbl')?></div>
             </a> 
       </li>  
       <!-- <?php 
