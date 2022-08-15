@@ -102,6 +102,7 @@ $ci =& get_instance();
                                                 <td class="text-right bdr_right"><strong><?=$this->lang->line('price_lbl')?></strong></td>
                                                 <td class="text-right bdr_right"><strong style="font-weight: 600"><?=$this->lang->line('saving_lbl')?></strong></td>
                                                 <td class="text-right bdr_right"><strong><?=$this->lang->line('qty_lbl')?></strong></td> 
+                                                <td class="text-right bdr_right"><strong><?=$this->lang->line('size_lbl')?></strong></td> 
                                                 <td class="text-right bdr_right"><strong><?=$this->lang->line('total_price_lbl')?></strong></td>
                                                 <td class="text-center bdr_right" width="100px"><strong><?=$this->lang->line('status_lbl')?></strong></td>
                                                 <td class="text-center bdr_right"><strong><?=$this->lang->line('update_lbl')?></strong></td>
@@ -129,6 +130,7 @@ $ci =& get_instance();
                                                 <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->product_price, 2)?></td>
                                                 <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->you_save_amt, 2)?></td>
                                                 <td class="thick-line text-right bdr_left"><?=$val->product_qty?></td>
+                                                <td class="thick-line text-right bdr_left"><?=$val->product_size?></td>
                                                 <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->total_price, 2)?></td>
                                                 <td class="text-center thick-line">
                                                     <?php 
