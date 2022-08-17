@@ -1836,8 +1836,12 @@ class Apis extends REST_Controller
                         $data_usr = $this->security->xss_clean($data_arr);
 
                         $where = array('product_id ' => $product_id, 'user_id' => $user_id);
-
-                        $updated_id = $this->General_model->updateByids($data_usr, $where, 'tbl_cart');
+			    
+			$data = $this->Product_model->single_product($value->product_id,false);
+			    
+			if($this->get_param['product_qty'] <= $data[0]->amount){
+				$updated_id = $this->General_model->updateByids($data_usr, $where, 'tbl_cart');
+			}
 
                         $row_info['success'] = '1';
                         $row_info['msg'] = $this->lang->line('update_cart');
