@@ -1997,7 +1997,10 @@ class Apis extends REST_Controller
                 $data_arr['delivery_charge'] = ($value->delivery_charge != 0) ? CURRENCY_CODE . ' ' . amount_format($value->delivery_charge) : $this->lang->line('free_lbl');
 
                 $data_arr['product_status'] = $this->get_product_info($value->product_id, 'status');
-                $data_arr['product_status_lbl'] = $this->lang->line('unavailable_lbl');                
+                $data_arr['product_status_lbl'] = $this->lang->line('unavailable_lbl');
+		
+		$data = $this->Product_model->single_product($value->product_id,false);
+                $data_arr['amount_inventory'] = $data[0]->amount;
 
                 array_push($response, $data_arr);
 
