@@ -32,10 +32,10 @@
 	$lang['size_feature_desc_lbl'] = "Nếu sản phẩm của bạn có nhiều kích cỡ khác nhau";
 
 	// for sub category labels
-	$lang['sub_category_lbl'] = "Thể loại phụ";
-	$lang['add_sub_category_lbl'] = "Thêm Thể Loại Phụ";
-	$lang['edit_sub_category_lbl'] = "Sửa Thể Loại Phụ";
-	$lang['sub_category_web_note_lbl'] = "Hiển thị tất cả sản phẩm theo thể loại phụ";
+	$lang['sub_category_lbl'] = "Đối tượng";
+	$lang['add_sub_category_lbl'] = "Thêm Đối tượng";
+	$lang['edit_sub_category_lbl'] = "Sửa Đối tượng";
+	$lang['sub_category_web_note_lbl'] = "Hiển thị tất cả sản phẩm theo Đối tượng";
 
 	// for brands labels
 	$lang['brand_lbl'] = "Hãng";
@@ -114,7 +114,7 @@
 	$lang['notification_confirm_msg'] = "Thông báo sẽ được gửi đến người dùng";
 
 	$lang['noti_category_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc thể loại này";
-	$lang['noti_sub_category_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc thể loại phụ này";
+	$lang['noti_sub_category_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc Đối tượng này";
 	$lang['noti_brand_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc hãng này";
 	$lang['noti_offer_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc offer này";
 	$lang['noti_banner_hint_lbl'] = "Khi mở thông báo sẽ mở danh sách sản phẩm thuộc banner này";

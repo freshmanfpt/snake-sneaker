@@ -47,7 +47,7 @@
                 echo '<input type="hidden" name="search_value" value="'.$_GET['search_value'].'">';
               }
             ?>
-            <div class="col-md-3">
+            <div class="col-md-3" style="display:none !important">
               <select class="form-control select2 filter" name="category">
                 <option value="">---<?=$this->lang->line('all_cats_lbl')?>--</option>
                 <?php 

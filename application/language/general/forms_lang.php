@@ -151,7 +151,7 @@
 	$lang['select_opt_lbl'] = "Chọn";
 	$lang['select_cat_lbl'] = "Chọn Thể Loại";
 	$lang['select_cats_lbl'] = "Chọn Thể Loại";
-	$lang['select_subcat_lbl'] = "Chọn Thể Loại Phụ";
+	$lang['select_subcat_lbl'] = "Chọn Đối tượng";
 	$lang['select_brand_lbl'] = "Chọn Hãng";
 	$lang['select_cat_brand_lbl'] = "Thể loại và hãng";
 	$lang['select_offer_lbl'] = "Chọn Offer";
@@ -161,7 +161,7 @@
 	$lang['select_status_lbl'] = "Chọn Status";
 
 	$lang['all_cats_lbl'] = "Tất cả thể loại";
-	$lang['all_subcat_lbl'] = "Tất cả thể loại phụ";
+	$lang['all_subcat_lbl'] = "Tất cả Đối tượng";
 	$lang['all_brand_lbl'] = "Tất cả Hãng";
 	$lang['all_offer_lbl'] = "Tất cả Offers";
 

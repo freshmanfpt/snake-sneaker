@@ -54,7 +54,7 @@
               <div class="title"><i class="fa fa-angle-right"></i> <?=$this->lang->line('category_lbl')?></div>
             </a> 
           </li>
-          <li>
+          <li style="display:none !important">
             <a href="<?=site_url('admin/sub-category')?>" class="<?php if($page_title==$this->lang->line('sub_category_lbl') OR $page_title==$this->lang->line('add_sub_category_lbl') OR $page_title==$this->lang->line('edit_sub_category_lbl')){ echo 'active';} ?>">
               <div class="title"><i class="fa fa-angle-right"></i> <?=$this->lang->line('sub_category_lbl')?></div>
             </a> 
