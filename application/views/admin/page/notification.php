@@ -205,12 +205,12 @@
 				                    </div> 
 			                      
 			                      <div class="or_link_item">
-			                      <h2>OR</h2>
+			                      <h2>Hoặc</h2>
 			                      </div>
 			                      <div class="form-group">
 			                        <label class="col-md-3 control-label"><?=$this->lang->line('external_link_lbl')?> :-<br/>(<?=$this->lang->line('optional_lbl')?>)</label>
 			                        <div class="col-md-9">
-			                          <input type="text" name="external_link" id="external_link" class="form-control" value="" placeholder="http://www.viaviweb.com">
+			                          <input type="text" name="external_link" id="external_link" class="form-control" value="" placeholder="http://www.sneaksneaker.com.vn">
 			                        </div>
 			                      </div>   
 			                    </div>   

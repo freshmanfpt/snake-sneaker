@@ -49,7 +49,7 @@
 
       <li class="cust-dropdown-container">
         <ul class="cust-dropdown"> 
-          <li>
+          <li style="display:none !important">
             <a href="<?=site_url('admin/category')?>" class="<?php if($page_title==$this->lang->line('category_lbl') OR $page_title==$this->lang->line('add_category_lbl') OR $page_title==$this->lang->line('edit_category_lbl')){ echo 'active';} ?>">
               <div class="title"><i class="fa fa-angle-right"></i> <?=$this->lang->line('category_lbl')?></div>
             </a> 
