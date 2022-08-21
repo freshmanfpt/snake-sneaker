@@ -11,7 +11,7 @@ $ci =& get_instance();
     </div>
   </div>
 
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"> 
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:none !important"> 
     <a href="<?=site_url('admin/category')?>" title="<?=$cat_cnt?>" class="card card-banner card-green-light">
       <div class="card-body"> <i class="icon fa fa-sitemap fa-4x"></i>
         <div class="content">
