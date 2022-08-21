@@ -74,14 +74,13 @@ $redirect=$_GET['redirect'].(isset($_GET['category']) ? '&category='.$_GET['cate
                   <div class="col-md-12 col-xs-12">
                       <div class="form-group">
                         <label class="col-md-2 control-label"><?=$this->lang->line('select_cat_brand_lbl')?>:-</label>
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="display:none !important">
                           <select name="category_id" class="select2" required="required">
-                            <option value="0" selected>--<?=$this->lang->line('select_cat_lbl')?>--</option>
                             <?php 
                             foreach ($category_list as $key => $value)
                             {
                               ?>
-                              <option value="<?=$value->id?>" <?php if(isset($product) && $product[0]->category_id==$value->id){ echo 'selected';} ?>><?=$value->category_name?></option>
+                              <option selected value="<?=$value->id?>" <?php if(isset($product) && $product[0]->category_id==$value->id){ echo 'selected';} ?>><?=$value->category_name?></option>
                               <?php
                             }
                             ?>
