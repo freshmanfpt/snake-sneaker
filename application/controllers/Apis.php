@@ -4477,6 +4477,9 @@ class Apis extends REST_Controller
                 $data_arr['you_save_per'] = $arr_ofr->you_save_per . ' ' . $this->lang->line('per_off_lbl');
 
                 $data_arr['delivery_charge'] = ($value->delivery_charge != 0) ? CURRENCY_CODE . ' ' . amount_format($value->delivery_charge) : $this->lang->line('free_lbl');
+		    
+		$data = $this->Product_model->single_product($value->product_id,false);
+                $data_arr['amount_inventory'] = $data[0]->amount;
 
                 array_push($response, $data_arr);
 
