@@ -291,7 +291,7 @@
 		$lang['refund_status_lbl'] = "Trạng thái hoàn trả";
 
 		$lang['refund_pending_lbl'] = "Đang chờ";
-		$lang['refund_process_lbl'] = "Đăng xử lý";
+		$lang['refund_process_lbl'] = "Đang xử lý";
 		$lang['refund_complete_lbl'] = "Hoàn thành";
 		$lang['refund_wait_lbl'] = "Đợi nhận";
 
