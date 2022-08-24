@@ -81,7 +81,7 @@ $ci =& get_instance();
                   }
                   ?>
                 </td>
-                <td><?=CURRENCY_CODE.' '.number_format($value->refund_pay_amt, 2)?></td>
+                <td><?=number_format($value->refund_pay_amt, 0).' '.CURRENCY_CODE?></td>
                 <td>
                   <?php 
                   
@@ -171,16 +171,12 @@ $ci =& get_instance();
                                 
                               </tr>
                               <tr>
-                                <td><strong><?=$this->lang->line('bank_ifsc_lbl')?>:</strong></td>
-                                <td><?=$value->bank_ifsc?></td>
                                 <td><strong><?=$this->lang->line('holder_mobile_lbl')?>:</strong></td>
                                 <td><?=$value->bank_holder_phone?></td>
                                 
                                 
                               </tr>
                               <tr>
-                                <td><strong><?=$this->lang->line('bank_type_lbl')?>:</strong></td>
-                                <td><?=ucfirst($value->account_type)?></td>
                                 <td><strong><?=$this->lang->line('holder_email_lbl')?>:</strong></td>
                                 <td colspan="3"><?=$value->bank_holder_email?></td>
                               </tr>

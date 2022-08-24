@@ -32,10 +32,7 @@
             <select class="form-control select2 filter" name="payment_mode" style="width: 100%">
               <option value="">---All---</option>
               <option value="cod" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='cod') ? 'selected="selected"' : ''?>><?=$this->lang->line("cod_short_lbl")?></option>
-              <option value="paypal" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='paypal') ? 'selected="selected"' : ''?>><?=$this->lang->line("paypal_lbl")?></option>
-              <option value="stripe" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='stripe') ? 'selected="selected"' : ''?>><?=$this->lang->line("stripe_lbl")?></option>
-              <option value="razorpay" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='razorpay') ? 'selected="selected"' : ''?>><?=$this->lang->line("razorpay_lbl")?></option>
-              <option value="paystack" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='paystack') ? 'selected="selected"' : ''?>><?=$this->lang->line("paystack_lbl")?></option>
+              <option value="momo" <?=(isset($_GET['payment_mode']) && $_GET['payment_mode']=='momo') ? 'selected="selected"' : ''?>><?=$this->lang->line("momo_lbl")?></option>
             </select>
           </div>
           <div class="col-md-3">
@@ -65,7 +62,7 @@
               <td><?=$i++?></td>
               <td><a href="<?php echo site_url("admin/orders/".$value->order_unique_id);?>"><?=$value->order_unique_id;?></a></td>
               <td style="word-wrap: break-word;"><?=$value->email?></td>
-              <td ><?=CURRENCY_CODE.' '.$value->payment_amt?></td>
+              <td ><?=$value->payment_amt.' '.CURRENCY_CODE?></td>
               <td><?=strtoupper($value->gateway)?></td>
               <td><?php echo $value->payment_id;?>
               </td>

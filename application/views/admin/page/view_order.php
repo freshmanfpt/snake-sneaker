@@ -127,11 +127,11 @@ $ci =& get_instance();
                                                     <img src="<?=IMG_PATH.$this->common_model->selectByidParam($val->product_id, 'tbl_product','featured_image')?>" style="height: 60px;width: 60px;border: 2px solid #ddd;border-radius:4px"/> 
                                                 </td>
                                                 <td class="thick-line bdr_left"><?=$val->product_title?></td>
-                                                <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->product_price, 2)?></td>
-                                                <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->you_save_amt, 2)?></td>
+                                                <td nowrap="" class="text-right thick-line"><?=number_format($val->product_price, 0).' '.CURRENCY_CODE?></td>
+                                                <td nowrap="" class="text-right thick-line"><?=number_format($val->you_save_amt, 0).' '.CURRENCY_CODE?></td>
                                                 <td class="thick-line text-right bdr_left"><?=$val->product_qty?></td>
                                                 <td class="thick-line text-right bdr_left"><?=$val->product_size?></td>
-                                                <td nowrap="" class="text-right thick-line"><?=CURRENCY_CODE.' '.number_format($val->total_price, 2)?></td>
+                                                <td nowrap="" class="text-right thick-line"><?=number_format($val->total_price, 0).' '.CURRENCY_CODE?></td>
                                                 <td class="text-center thick-line">
                                                     <?php 
                                                         switch ($val->pro_order_status) {
@@ -168,7 +168,7 @@ $ci =& get_instance();
                                                 <td class="thick-line bdr_left"></td>
                                                 <td class="thick-line bdr_left"></td>
                                                 <td colspan="2" class="thick-line text-right bdr_left"><strong><?=$this->lang->line('total_lbl')?></strong></td>
-                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=CURRENCY_CODE.' '.number_format($order_data[0]->total_amt, 2)?></td>
+                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=number_format($order_data[0]->total_amt, 0).' '.CURRENCY_CODE?></td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
@@ -182,7 +182,7 @@ $ci =& get_instance();
                                                     <td class="thick-line bdr_left"></td>
                                                     <td class="thick-line bdr_left"></td>
                                                     <td colspan="2" class="thick-line text-right bdr_left"><strong><?=$this->lang->line('cancel_ord_amt_lbl')?></strong></td>
-                                                    <td nowrap="" class="text-right thick-line" style="font-weight: 600">- <?=CURRENCY_CODE.' '.number_format($cancel_ord_amt, 2)?></td>
+                                                    <td nowrap="" class="text-right thick-line" style="font-weight: 600">- <?=number_format($cancel_ord_amt, 0).' '.CURRENCY_CODE?></td>
                                                     <td></td>
                                                     <td></td>
                                                 </tr>   
@@ -194,7 +194,7 @@ $ci =& get_instance();
                                                 <td class="thick-line bdr_left"></td>
                                                 <td class="thick-line bdr_left"></td>
                                                 <td colspan="2" class="thick-line text-right bdr_left"><strong><?=$this->lang->line('discount_amt_lbl')?></strong></td>
-                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600">- <?=CURRENCY_CODE.' '.number_format($order_data[0]->discount_amt, 2)?></td>
+                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600">- <?=number_format($order_data[0]->discount_amt, 0).' '.CURRENCY_CODE?></td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
@@ -204,7 +204,7 @@ $ci =& get_instance();
                                                 <td class="thick-line bdr_left"></td>
                                                 <td class="thick-line bdr_left"></td>
                                                 <td colspan="2" class="thick-line text-right bdr_left"><strong><?=$this->lang->line('delivery_charge_lbl')?></strong></td>
-                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=($order_data[0]->delivery_charge) ? '+ '.CURRENCY_CODE.number_format($order_data[0]->delivery_charge, 2) : $this->lang->line('free_lbl')?></td>
+                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=($order_data[0]->delivery_charge) ? '+ '.CURRENCY_CODE.number_format($order_data[0]->delivery_charge, 0) : $this->lang->line('free_lbl')?></td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
@@ -213,7 +213,7 @@ $ci =& get_instance();
                                                 <td class="thick-line bdr_left"></td>
                                                 <td class="thick-line bdr_left"></td>
                                                 <td colspan="2" class="thick-line text-right bdr_left"><strong><?=$this->lang->line('payable_amt_lbl')?></strong></td>
-                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=CURRENCY_CODE.' '.number_format($order_data[0]->new_payable_amt, 2)?></td>
+                                                <td nowrap="" class="text-right thick-line" style="font-weight: 600"><?=number_format($order_data[0]->new_payable_amt, 0).' '.CURRENCY_CODE?></td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
