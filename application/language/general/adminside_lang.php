@@ -73,7 +73,7 @@
 	
 	$lang['orders_lbl'] = "Đơn Hàng";
 	$lang['ord_list_lbl'] = "Đơn Hàng";
-	$lang['ord_summary_lbl'] = "Order Summary";
+	$lang['ord_summary_lbl'] = "Đơn Hàng";
 
 	$lang['transactions_lbl'] = "Giao Dịch";
 
