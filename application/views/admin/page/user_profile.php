@@ -331,12 +331,6 @@ else{
 													<tr>
 														<td style="border-top: 0"><strong><?=$this->lang->line('bank_acc_no_lbl')?></strong></td>
 														<td style="border-top: 0"><?=$value->account_no?></td>
-														<td style="border-top: 0"><strong><?=$this->lang->line('bank_type_lbl')?></strong></td>
-														<td style="border-top: 0"><?=ucfirst($value->account_type)?></td>
-													</tr>
-													<tr>
-														<td><strong><?=$this->lang->line('bank_ifsc_lbl')?></strong></td>
-														<td colspan="3"><?=$value->bank_ifsc?></td>
 													</tr>
 													<tr>
 														<td class="col-md-3"><strong><?=$this->lang->line('holder_name_lbl')?></strong></td>
