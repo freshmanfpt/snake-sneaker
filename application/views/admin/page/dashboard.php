@@ -4,7 +4,7 @@ $ci =& get_instance();
 
 <div class="row card_item_block" style="padding-left: 30px;padding-right: 30px">
 
-  <div class="col-lg-12">
+  <div class="col-lg-12" style="display:none !important">
     <div class="alert alert-danger alert-dismissible fade in" role="alert">
       <h4 id="oh-snap!-you-got-an-error!"><?=$this->lang->line("note_lbl")?>:<a class="anchorjs-link" href="#oh-snap!-you-got-an-error!"><span class="anchorjs-icon"></span></a></h4>
       <p><?=$this->lang->line('we_recommended_img_lbl')?></p>  
@@ -21,7 +21,7 @@ $ci =& get_instance();
       </div>
     </a> 
   </div>
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"> 
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:none !important"> 
     <a href="<?=site_url('admin/sub-category')?>" title="<?=$sub_cat_cnt?>" class="card card-banner card-yellow-light">
       <div class="card-body"> <i class="icon fa fa-sitemap fa-4x"></i>
         <div class="content">

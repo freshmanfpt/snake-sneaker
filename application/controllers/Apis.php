@@ -1836,8 +1836,9 @@ class Apis extends REST_Controller
                         $data_usr = $this->security->xss_clean($data_arr);
 
                         $where = array('product_id ' => $product_id, 'user_id' => $user_id);
-
-                        $updated_id = $this->General_model->updateByids($data_usr, $where, 'tbl_cart');
+			
+			$updated_id = $this->General_model->updateByids($data_usr, $where, 'tbl_cart');
+	
 
                         $row_info['success'] = '1';
                         $row_info['msg'] = $this->lang->line('update_cart');
@@ -1996,7 +1997,10 @@ class Apis extends REST_Controller
                 $data_arr['delivery_charge'] = ($value->delivery_charge != 0) ? CURRENCY_CODE . ' ' . amount_format($value->delivery_charge) : $this->lang->line('free_lbl');
 
                 $data_arr['product_status'] = $this->get_product_info($value->product_id, 'status');
-                $data_arr['product_status_lbl'] = $this->lang->line('unavailable_lbl');                
+                $data_arr['product_status_lbl'] = $this->lang->line('unavailable_lbl');
+		
+		$data = $this->Product_model->single_product($value->product_id,false);
+                $data_arr['amount_inventory'] = $data[0]->amount;
 
                 array_push($response, $data_arr);
 
@@ -4473,6 +4477,9 @@ class Apis extends REST_Controller
                 $data_arr['you_save_per'] = $arr_ofr->you_save_per . ' ' . $this->lang->line('per_off_lbl');
 
                 $data_arr['delivery_charge'] = ($value->delivery_charge != 0) ? CURRENCY_CODE . ' ' . amount_format($value->delivery_charge) : $this->lang->line('free_lbl');
+		    
+		$data = $this->Product_model->single_product($value->product_id,false);
+                $data_arr['amount_inventory'] = $data[0]->amount;
 
                 array_push($response, $data_arr);
 

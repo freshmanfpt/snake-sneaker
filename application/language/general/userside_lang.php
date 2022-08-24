@@ -198,7 +198,7 @@
 
 	$lang['recent_view_lbl'] = "Đã xem gần đây";
 
-	$lang['subcategory_lbl'] = "Thể loại phụ";
+	$lang['subcategory_lbl'] = "Đối tượng";
 	$lang['banner_lbl'] = "Banner";
 	$lang['hot_deal_lbl'] = "Deal Hôm Nay";
 
