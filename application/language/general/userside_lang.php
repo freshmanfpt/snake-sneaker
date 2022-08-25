@@ -82,11 +82,11 @@
 	$lang['cart_total_lbl'] = "Tổng giỏ hàng";
 	$lang['price_lbl'] = "Giá";
 	
-	$lang['payable_amt_lbl'] = "Số lượng trả";
+	$lang['payable_amt_lbl'] = "Tổng cộng";
 
 	$lang['cancel_ord_amt_lbl'] = "Hủy đơn hàng";
 
-	$lang['amt_pay_lbl'] = "Số lượng trả";
+	$lang['amt_pay_lbl'] = "Tổng cộng";
 
 
 	// End my cart page
@@ -479,7 +479,7 @@
 
 	$lang['no_coupon'] = "Không tìm thấy mã giảm giá!";
 
-	$lang['no_data'] = "Không tìm thấy data!";
+	$lang['no_data'] = "Không có dữ liệu!";
 
 	$lang['email_sent'] = "Email được gửi thành công";
 

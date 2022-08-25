@@ -357,7 +357,7 @@
 
 	$lang['payment_id_lbl'] = "ID Payment";
 
-	$lang['refund_amt_lbl'] = "AMT Hoàn Trả.";	
+	$lang['refund_amt_lbl'] = "Tiền Hoàn Trả.";	
 
 	$lang['last_updated_lbl'] = "Cập Nhật Lần Cưới";
 
@@ -380,7 +380,7 @@
 	$lang['user_lbl'] = "User";
 	$lang['amount_lbl'] = "Số Lượng";
 	$lang['status_lbl'] = "Trạng Thái";
-	$lang['register_on_lbl'] = "Đăng ký trên";
+	$lang['register_on_lbl'] = "Ngày đăng ký";
 
 
 	$lang['top_sales_products_lbl'] = "Top sản phẩm bán chạy";
@@ -398,17 +398,17 @@
 	$lang['remove_todays_deal_lbl'] = "Xóa Deal Hôm Nay";
 	
 
-	$lang['recommended_resolution_lbl'] = "Size ổn định";
-	$lang['we_recommended_img_lbl'] = "Nên upload jpg, jpeg, JPG, JPEG files cho tỷ lệ tốt nhất";
-	$lang['recommended_img_lbl'] = "Nên jpg, jpeg, JPG, JPEG image files cho tỷ lệ tốt nhất";
+	$lang['recommended_resolution_lbl'] = "";
+	$lang['we_recommended_img_lbl'] = "";
+	$lang['recommended_img_lbl'] = "";
 
-	$lang['accept_img_files_lbl'] = "Chỉ nhận png, jpg, jpeg, PNG, JPG, JPEG image files";
+	$lang['accept_img_files_lbl'] = "";
 	
 	$lang['search_lbl'] = "Tìm kiếm";	
 
 	$lang['successfully_lbl'] = "Thành Công";
 
-	$lang['created_on_lbl'] = "Tạo Tại";
+	$lang['created_on_lbl'] = "Ngày Tạo";
 
 	$lang['wishlist_lbl'] = "Wishlist";
 	$lang['cart_lbl'] = "Giỏ Hàng";

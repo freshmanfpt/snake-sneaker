@@ -32,7 +32,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-group" style="display:none">
                 <?php 
                   if(isset($brand)){
                     $cat_id=explode(',', $brand[0]->category_id);
@@ -40,12 +40,12 @@
                 ?>
                 <label class="col-md-3 control-label"><?=$this->lang->line('select_cats_lbl')?> :-</label>
                 <div class="col-md-6">
-                  <select name="category_id[]" class="select2" multiple="">
+                  <select name="category_id[]" class="select2">
                       <?php 
                           foreach ($category_list as $key => $value)
                           {
                             ?>
-                            <option value="<?=$value->id?>" <?php if(isset($brand) && in_array($value->id,$cat_id)){ echo 'selected'; } ?>><?=$value->category_name?></option>
+                            <option selected value="<?=$value->id?>" <?php if(isset($brand) && in_array($value->id,$cat_id)){ echo 'selected'; } ?>><?=$value->category_name?></option>
                             <?php
                           }
                       ?>
@@ -55,9 +55,6 @@
               
               <div class="form-group">
                   <label class="col-md-3 control-label"><?=$this->lang->line('select_image_lbl')?> :-
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 400x240)</p>
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_img_lbl')?>)</p>
                   </label>
                   <div class="col-md-6">
                     <div class="fileupload_block">

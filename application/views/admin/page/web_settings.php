@@ -66,8 +66,6 @@
                       </div>
                       <div class="form-group">
                         <label class="col-md-4 control-label"><?=$this->lang->line('site_logo1_lbl')?><span class="required_fields">*</span> :-
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 170x36)</p>
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
                         </label>
                         <div class="col-md-6">
                           <div class="fileupload_block">
@@ -92,9 +90,6 @@
                       </div>
                       <div class="form-group">
                         <label class="col-md-4 control-label"><?=$this->lang->line('site_logo2_lbl')?><span class="required_fields">*</span> :-
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 170x36)</p>
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('site_logo2_note_lbl')?>)</p>
                         </label>
                         <div class="col-md-6">
                           <div class="fileupload_block">
@@ -118,7 +113,6 @@
                       </div>
                       <div class="form-group">
                         <label class="col-md-4 control-label"><?=$this->lang->line('site_favicon_lbl')?><span class="required_fields">*</span> :-
-                          <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 16x16)</p>
                         </label>
 
                         <div class="col-md-6">

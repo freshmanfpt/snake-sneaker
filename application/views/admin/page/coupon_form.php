@@ -125,9 +125,6 @@
               <hr/>
               <div class="form-group">
                   <label class="col-md-3 control-label"><?=$this->lang->line('select_image_lbl')?> :-
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 300X130,400X173)</p>
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
-                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_img_lbl')?>)</p>
                   </label>
                   <div class="col-md-6">
                     <div class="fileupload_block">

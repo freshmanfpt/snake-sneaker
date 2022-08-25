@@ -70,9 +70,7 @@
 			                        </div>
 			                      </div>
 			                      <div class="form-group">
-			                      	<label class="col-md-3 control-label"><?=$this->lang->line('select_image_lbl')?>(<?=$this->lang->line('optional_lbl')?>) :-
-					                	<p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 600x293, 650x317, 700x342, 750x366)</p>
-					                    <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
+			                      	<label class="col-md-3 control-label"><?=$this->lang->line('select_image_lbl')?> :-
 					                </label>
 			                        <div class="col-md-9">
 			                          <div class="fileupload_block">
@@ -83,11 +81,11 @@
 			                      </div>
 			                      <div class="col-md-12 mrg_bottom link_block">
 			                        <div class="form-group">
-			                          <label class="col-md-3 control-label"><?=$this->lang->line('notification_for_lbl')?> :-<br/>(<?=$this->lang->line('optional_lbl')?>)</label>
+			                          <label class="col-md-3 control-label"><?=$this->lang->line('notification_for_lbl')?> :-<br/></label>
 			                          <div class="col-md-9">
 			                            <select name="type" id="type" class="select2">
 			                              <option value="" selected="">--<?=$this->lang->line('select_type_lbl')?>--</option>
-			                              <option value="category"><?=$this->lang->line('category_lbl')?></option>
+			                              <option value="category">Tất cả sản phẩm</option>
 			                              <option value="sub_category"><?=$this->lang->line('sub_category_lbl')?></option>
 			                              <?php 
 			                              	if(!empty($todays_deal)){
@@ -105,7 +103,7 @@
 			                        </div>
 
 			                        <div class="allTypes">
-				                        <div class="form-group typeForCategory" style="display: none;">
+				                        <div class="form-group typeForCategory" style="display: none !important;">
 				                          <label class="col-md-3 control-label"><?=$this->lang->line('category_lbl')?> :-<br/>
 				                          <p class="control-label-help"><?=$this->lang->line('noti_category_hint_lbl')?></p></label>
 				                          <div class="col-md-9">
@@ -113,7 +111,7 @@
 				                              <option value="">--<?=$this->lang->line('select_cat_lbl')?>--</option>
 				                              <?php 
 				                              	foreach ($category_list as $key => $value) {
-				                              		echo '<option value="'.$value->id.'">'.$value->category_name.'</option>';
+				                              		echo '<option selected value="'.$value->id.'">'.$value->category_name.'</option>';
 				                              	}
 				                              ?>
 				                            </select>
@@ -121,13 +119,13 @@
 				                      	</div>
 
 				                      	<div class="form-group typeForSubCategory" style="display: none;">
-				                          <label class="col-md-3 control-label"><?=$this->lang->line('category_lbl')?> :-</label>
-				                          <div class="col-md-9">
+				                          <label class="col-md-3 control-label" style="display : none !important"><?=$this->lang->line('category_lbl')?> :-</label>
+				                          <div class="col-md-9" style="display : none !important">
 				                            <select name="cat_id2" class="getData" data-type="category">
 				                              <option value="">--<?=$this->lang->line('select_cat_lbl')?>--</option>
 				                              <?php 
 				                              	foreach ($category_list as $key => $value) {
-				                              		echo '<option value="'.$value->id.'">'.$value->category_name.'</option>';
+				                              		echo '<option selected value="'.$value->id.'">'.$value->category_name.'</option>';
 				                              	}
 				                              ?>
 				                            </select>
@@ -208,7 +206,7 @@
 			                      <h2>Hoặc</h2>
 			                      </div>
 			                      <div class="form-group">
-			                        <label class="col-md-3 control-label"><?=$this->lang->line('external_link_lbl')?> :-<br/>(<?=$this->lang->line('optional_lbl')?>)</label>
+			                        <label class="col-md-3 control-label"><?=$this->lang->line('external_link_lbl')?> :-<br/></label>
 			                        <div class="col-md-9">
 			                          <input type="text" name="external_link" id="external_link" class="form-control" value="" placeholder="http://www.sneaksneaker.com.vn">
 			                        </div>
@@ -233,15 +231,18 @@
 </div>
 
 <script type="text/javascript">
-	$('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-		localStorage.setItem('activeTab', $(e.target).attr('href'));
-	});
+	    var _id=$("select[name='cat_id2']").val();
+      	// getting sub categories
+      	$("select[name='sub_cat_id']").html('<option value="0">--<?=$this->lang->line('select_subcat_lbl')?>--</option>');
+      	var href = '<?php echo site_url('admin/product/get_sub_category/')?>'+_id;
 
-	var activeTab = localStorage.getItem('activeTab');
-	if(activeTab){
-		$('.nav-tabs a[href="' + activeTab + '"]').tab('show');
-	}
-
+      	$.ajax({
+      		type:'GET',
+      		url:href,
+      		success:function(res){
+      			$("select[name='sub_cat_id']").append(res);
+      		}
+      	});
 	function readURL(input) {
 		if (input.files && input.files[0]) {
 			var reader = new FileReader();
@@ -271,7 +272,7 @@
 
 		if(_type=='category'){
 			$("*[class*='typeFor']").hide();
-			$(".typeForCategory").show();
+			// $(".typeForCategory").show();
 			$("*[class*='typeFor']:not(:hidden)").each(function(){
 				$(this).find("select").attr("required",true);
 			});

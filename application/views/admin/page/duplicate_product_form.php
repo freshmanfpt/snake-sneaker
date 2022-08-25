@@ -283,7 +283,6 @@ $redirect=$_GET['redirect'].(isset($_GET['category']) ? '&category='.$_GET['cate
                   <div class="col-md-6">
                     <div class="form-group">
                       <label class="col-md-4 control-label"><?=$this->lang->line('product_size_chart_lbl')?>:-
-                        <p class="control-label-help hint_lbl">(<?=$this->lang->line('accept_img_files_lbl')?>)</p>
                       </label>
                       <div class="col-md-8">
                         <div class="fileupload_block">
@@ -300,8 +299,6 @@ $redirect=$_GET['redirect'].(isset($_GET['category']) ? '&category='.$_GET['cate
               <div class="section_container" style="padding: 10px;border:1px solid #d7d7d7;">
                 <h4><?=$this->lang->line('product_images_lbl')?></h4>
                 <hr/>
-                <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_resolution_lbl')?>: 600x600, 800x800) (<?=$this->lang->line('accept_img_files_lbl')?>)</p>
-                <p class="control-label-help hint_lbl">(<?=$this->lang->line('recommended_img_lbl')?>)</p>
                 <br/>
                 <div class="row">
                   <div class="col-md-6">

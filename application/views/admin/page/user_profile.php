@@ -182,8 +182,8 @@ else{
 										?>
 									</td>
 									<td><?=$value->product_qty?></td>
-									<td nowrap=""><?=CURRENCY_CODE.' '.number_format($value->selling_price, 2)?></td>
-									<td nowrap=""><?=CURRENCY_CODE.' '.number_format($value->selling_price*$value->product_qty, 2)?></td>
+									<td nowrap=""><?=number_format($value->selling_price, 0).' '.CURRENCY_CODE?></td>
+									<td nowrap=""><?=number_format($value->selling_price*$value->product_qty, 0).' '.CURRENCY_CODE?></td>
 									<td><?php echo date('d-m-Y h:i A',$value->created_at);?></td>
 									<td>
 										<a href="<?php echo site_url('admin/users/remove_to_cart/'.$value->id); ?>" class="btn btn_remove btn-danger btn_delete" data-toggle="tooltip" data-tooltip="<?=$this->lang->line('delete_lbl')?>"><i class="fa fa-trash"></i></a>
@@ -220,7 +220,7 @@ else{
 									<td><a href="<?php echo site_url("admin/orders/".$row->order_unique_id);?>" target="_blank"><?php echo $row->order_unique_id;?></a></td>
 									<td><?php echo $row->name;?></td>
 									<td><?php echo $row->mobile_no;?></td>
-									<td nowrap=""><?=CURRENCY_CODE.' '.$row->new_payable_amt?></td>
+									<td nowrap=""><?=$row->new_payable_amt.' '.CURRENCY_CODE?></td>
 									<td><?php echo date('d-m-Y h:i A',$row->order_date);?></td>
 									<td>
 

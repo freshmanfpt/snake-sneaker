@@ -87,7 +87,7 @@
               <tr>
                 <td colspan="2"></td>
                 <td colspan="2" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=$this->lang->line('sub_total_lbl')?></td>
-                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=CURRENCY_CODE.' '.$_total_price?></td>
+                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=$_total_price.' '.CURRENCY_CODE?></td>
               </tr>
               <tr>
                 <td colspan="2"></td>
@@ -97,12 +97,12 @@
               <tr>
                 <td colspan="2"></td>
                 <td colspan="2" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=$this->lang->line('discount_lbl')?></td>
-                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;">- <?=CURRENCY_CODE.' '.($order_details->discount_amt)?></td>
+                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;">- <?=($order_details->discount_amt).' '.CURRENCY_CODE?></td>
               </tr>
               <tr>
                 <td colspan="2"></td>
                 <td colspan="2" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=$this->lang->line('payable_amt_lbl')?></td>
-                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=CURRENCY_CODE.' '.$order_details->new_payable_amt?></td>
+                <td align="center" style="border-top: 1px solid #ddd;font-size: 14px;font-weight: bold;"><?=$order_details->new_payable_amt.' '.CURRENCY_CODE?></td>
               </tr>
             </tfoot>
           </table>

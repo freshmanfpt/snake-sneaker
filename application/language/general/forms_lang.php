@@ -223,15 +223,15 @@
 
 	$lang['discount_in_amt_lbl'] = "Giảm tiền";
 
-	$lang['max_discount_status_lbl'] = "Bật tắt giới hạn giảm tối đa";
+	$lang['max_discount_status_lbl'] = "Giới hạn giảm tối đa";
 
 	$lang['max_discount_amt_lbl'] = "Số lượng giảm tối đa";
 
-	$lang['min_amt_in_cart_status_lbl'] = "Bật tắt số lượng tối thiểu trong giỏ hàng";
+	$lang['min_amt_in_cart_status_lbl'] = "Số lượng tối thiểu trong giỏ hàng";
 
-	$lang['min_amt_in_cart_lbl'] = "Số lượng tối theo trong giỏ hàng";
+	$lang['min_amt_in_cart_lbl'] = "Số lượng thiểu tối trong giỏ hàng (VND)";
 
-	$lang['max_coupon_per_user_lbl'] = "Số lần sử dụng theo người dùng";
+	$lang['max_coupon_per_user_lbl'] = "Số lần sử dụng tối đa";
 
 	$lang['true_lbl'] = "Bật";
 
