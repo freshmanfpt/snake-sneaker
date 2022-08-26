@@ -479,7 +479,7 @@
 
 	$lang['no_coupon'] = "Không tìm thấy mã giảm giá!";
 
-	$lang['no_data'] = "Không có dữ liệu!";
+	$lang['no_data'] = "Không có bản ghi nào!";
 
 	$lang['email_sent'] = "Email được gửi thành công";
 

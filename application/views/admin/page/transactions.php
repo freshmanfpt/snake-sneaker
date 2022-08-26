@@ -62,7 +62,7 @@
               <td><?=$i++?></td>
               <td><a href="<?php echo site_url("admin/orders/".$value->order_unique_id);?>"><?=$value->order_unique_id;?></a></td>
               <td style="word-wrap: break-word;"><?=$value->email?></td>
-              <td ><?=$value->payment_amt.' '.CURRENCY_CODE?></td>
+              <td style="min-width: 125px;"><?=number_format($value->payment_amt).' '.CURRENCY_CODE?></td>
               <td><?=strtoupper($value->gateway)?></td>
               <td><?php echo $value->payment_id;?>
               </td>

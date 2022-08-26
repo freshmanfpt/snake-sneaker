@@ -322,7 +322,7 @@
 
 	$lang['profile_lbl'] = "Hồ sơ";
 
-	$lang['backup_db_lbl'] = "Sao lưu dữ liệu";
+	$lang['backup_db_lbl'] = "Sao lưu CSDL";
 
 	// End top header labels
 

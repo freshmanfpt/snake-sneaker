@@ -131,7 +131,7 @@ else{
 									}
 									?>
 								</td>
-								<td nowrap=""><?=CURRENCY_CODE.' '.number_format($value->selling_price, 2)?></td>
+								<td nowrap=""><?=number_format($value->selling_price, 0).' '.CURRENCY_CODE?></td>
 								<td><?php echo date('d-m-Y h:i A',$value->created_at);?></td>
 								<td>
 									<a href="<?php echo site_url('admin/users/remove_to_wishlist/'.$value->id); ?>" class="btn btn_remove btn-danger btn_delete" data-toggle="tooltip" data-tooltip="<?=$this->lang->line('delete_lbl')?>"><i class="fa fa-trash"></i></a>
