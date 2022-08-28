@@ -515,7 +515,7 @@
 
 	$lang['empty_wishlist'] = "Your wishlist is successfully empty";
 
-	$lang['stripe_ord_prefix'] = "New order is placed. Order ID:";
+	$lang['stripe_ord_prefix'] = "Có đơn mới đã được đặt. Order ID:";
 
 	$lang['stripe_token_issue'] = "There is some error in generating stripe payment token!";
 
