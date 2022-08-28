@@ -433,14 +433,13 @@ class Frontend extends MY_Controller
 
                     $message = array('message' => $this->lang->line('change_password_msg'), 'class' => 'success');
                     $this->session->set_flashdata('response_msg', $message);
-
-                    redirect('/', 'refresh');
+                    echo "<script type='text/javascript'>alert('Cập nhật mật khẩu thành công');</script>";
                 }
             } else {
                 if ($requestToken != '') {
-                    redirect('reset-password?requestToken=' . $requestToken, 'refresh');
+                    // redirect('reset-password?requestToken=' . $requestToken, 'refresh');
                 } else {
-                    redirect('reset-password', 'refresh');
+                    // redirect('reset-password', 'refresh');
                 }
                 exit();
             }
@@ -450,9 +449,9 @@ class Frontend extends MY_Controller
         }
 
         if ($requestToken != '') {
-            redirect('reset-password?requestToken=' . $requestToken, 'refresh');
+            // redirect('reset-password?requestToken=' . $requestToken, 'refresh');
         } else {
-            redirect('reset-password', 'refresh');
+            // redirect('reset-password', 'refresh');
         }
         exit();
     }
