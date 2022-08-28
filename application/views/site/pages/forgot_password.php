@@ -70,7 +70,7 @@
                 </div>
                 <button class="btn form-button btn-block my-3 mb-3" type="submit"><?=$this->lang->line('reset_password_send_btn')?></button>
               </form>
-              <p class="text-3 text-center text-muted">Already have an account? <a class="btn-link" href="<?=base_url('login-register')?>" title="<?=$this->lang->line('login_lbl')?>"><?=$this->lang->line('login_lbl')?></a></p> 
+              <!-- <p class="text-3 text-center text-muted">Already have an account? <a class="btn-link" href="<?=base_url('login-register')?>" title="<?=$this->lang->line('login_lbl')?>"><?=$this->lang->line('login_lbl')?></a></p>  -->
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
           submitBtn.html("<?=$this->lang->line('reset_password_send_btn')?>");          
 
           if(data.status=='1'){
-            window.location.href=data.redirectTo;
+            // window.location.href=data.redirectTo;
           }
           else{
             myAlert(data.message,"myalert-danger");

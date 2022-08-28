@@ -117,7 +117,7 @@ $this->session->unset_userdata($array_items);
 </head>
 
 <body>
-  <div class="se-pre-con"></div>
+  <!-- <div class="se-pre-con"></div>
   <div class="process_loader"></div>
   <div class="wrapper home-3">
     <header>
@@ -469,5 +469,5 @@ $this->session->unset_userdata($array_items);
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </header>

@@ -9,7 +9,7 @@
 	$lang['invalid_password']="Mật khẩu không hợp lệ!";
 
 	// for account deactive
-	$lang['account_deactive']="Tài khoản của bạn đã bị khóa hoặc xóa.";
+	$lang['account_deactive']="Tài khoản của bạn đã bị khóa.";
 
 	// for lagin success
 	$lang['login_success']="Đăng nhập thành công.";

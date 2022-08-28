@@ -1,5 +1,5 @@
   <footer>
-    <div class="footer-container white-bg"> 
+    <!-- <div class="footer-container white-bg"> 
       <div class="footer-top-area ptb-50">
         <div class="container">
           <div class="row"> 
@@ -172,10 +172,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Product Quick Preview -->
-      <div id="productQuickView" class="modal fade" role="dialog">
+      <!-- <div id="productQuickView" class="modal fade" role="dialog">
         <div class="modal-dialog"> 
           <div class="modal-content">
             <div class="modal-header">
@@ -199,11 +199,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </footer>
 
-    <div id="content" data-myalert data-myalert-max="1"></div>
+    <!-- <div id="content" data-myalert data-myalert-max="1"></div> -->
     
     <style type="text/css">
       .radio-group{
@@ -226,7 +226,7 @@
       }
     </style>
 
-    <div id="cartModal" class="modal fade" role="dialog">
+    <!-- <div id="cartModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -235,8 +235,8 @@
           <div class="modal-body"></div>
         </div>
       </div>
-    </div>
-    <?php
+    </div> -->
+    <!-- <?php
     if($this->session->flashdata('cart_msg')) {
       $message = $this->session->flashdata('cart_msg');
       unset($_SESSION['cart_msg']);
@@ -312,7 +312,7 @@
 
       <script defer src="<?=base_url('assets/site_assets/js/custom.js')?>"></script>
 
-      <?=html_entity_decode($this->web_settings->footer_code)?>
+      <?=html_entity_decode($this->web_settings->footer_code)?> -->
 
     </body>
     </html>
