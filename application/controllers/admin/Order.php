@@ -636,7 +636,7 @@ class Order extends CI_Controller {
 
         foreach ($row as $key => $value) {
 
-            $old_title='New order is placed by '.$value->user_name;
+            $old_title='Có đơn hàng được đặt bởi '.$value->user_name;
 
             if(strlen($old_title) > 30){
               $title=substr(stripslashes($old_title), 0, 30).'...';  
