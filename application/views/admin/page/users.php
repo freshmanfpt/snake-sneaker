@@ -114,7 +114,7 @@
 
                  	<a href="<?php echo site_url("admin/users/edit/".$row->id);?>?redirect=<?=$redirectUrl?>" class="btn btn-primary btn_cust" data-toggle="tooltip" data-tooltip="<?=$this->lang->line('edit_lbl')?>"><i class="fa fa-edit"></i></a>
 
-                  <a href="javascript:void(0)" class="btn btn-danger btn_delete" data-toggle="tooltip" data-id="<?=$row->id?>" data-tooltip="<?=$this->lang->line('delete_lbl')?>"><i class="fa fa-trash"></i></a>
+                  <!-- <a href="javascript:void(0)" class="btn btn-danger btn_delete" data-toggle="tooltip" data-id="<?=$row->id?>" data-tooltip="<?=$this->lang->line('delete_lbl')?>"><i class="fa fa-trash"></i></a> -->
                 </td>
               </tr>
              <?php		

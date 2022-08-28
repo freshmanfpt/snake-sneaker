@@ -185,7 +185,7 @@ define('PROFILE_IMG', $this->db->get_where('tbl_admin', array('id' => '1'))->row
                 </div>
                 <ul class="action">
                   <li><a href="<?=site_url('admin/profile')?>"><?=$this->lang->line('profile_lbl')?></a></li>                  
-                  <li><a href="<?=site_url('admin/backup')?>" class="btn_backup btn_top_action"><?=$this->lang->line('backup_db_lbl')?></a></li>
+                  <!-- <li><a href="<?=site_url('admin/backup')?>" class="btn_backup btn_top_action"><?=$this->lang->line('backup_db_lbl')?></a></li> -->
                   <li><a href="<?=site_url('admin/logout')?>" class="btn_logout btn_top_action">Đăng xuất</a></li>
                 </ul>
               </div>

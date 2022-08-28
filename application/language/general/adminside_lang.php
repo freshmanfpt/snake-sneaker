@@ -81,7 +81,7 @@
 
 	$lang['refund_details_lbl'] = "Chi Tiết Hoàn Trả";
 
-	$lang['contact_list_lbl'] = "Danh Bạ";
+	$lang['contact_list_lbl'] = "Liên hệ";
 	$lang['sub_list_lbl'] = "Danh Sách Liên Hệ";
 	$lang['subjects_lbl'] = "Liên Hệ";
 	$lang['add_more_subject_lbl'] = "Thêm Liên Hệ";
