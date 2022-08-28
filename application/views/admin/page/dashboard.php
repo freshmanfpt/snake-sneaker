@@ -231,7 +231,7 @@ $ci =& get_instance();
               <tr>
                 <th><?=$this->lang->line('ord_id_lbl')?></th>
                 <th><?=$this->lang->line('user_lbl')?></th>
-                <th class="right"><?=$this->lang->line('amount_lbl')?></th>
+                <th class="right">Giá</th>
                 <th><?=$this->lang->line('status_lbl')?></th>
               </tr>
             </thead>
@@ -275,7 +275,7 @@ $ci =& get_instance();
                   <tr>
                     <td><a href="<?php echo site_url("admin/orders/".$value->order_unique_id);?>" target="_blank"><?=$value->order_unique_id?></a></td>
                     <td class="right"><?=$value->name?></td>
-                    <td class="right"><?=CURRENCY_CODE.' '.$value->payable_amt?></td>
+                    <td class="right"><?=number_format($value->payable_amt,0).' '.CURRENCY_CODE?></td>
                     <td><span class="badge <?=$_bnt_class?> badge-icon"><i class="<?=$_btn_icon?>" aria-hidden="true"></i><span><?=$_btn_title?></span></span></td>
                   </tr>
                 <?php } }else{ ?>
